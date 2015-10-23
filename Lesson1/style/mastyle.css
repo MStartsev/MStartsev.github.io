@@ -35,14 +35,16 @@ body{background-color: snow }
 				padding: 040px 0 90px 0 ;
 			}
 
-		.text2 { font: 14pt/18pt Times New Roman;
+		.text2 {
+				font: 14pt/18pt Times New Roman;
 				margin: 1% auto 2% auto;
 				padding: 0px 0 5px 0 ;
 				width: 70%;
 				height: 30%;
 			}
 
-		.text3 { font: 14pt/15pt Times New Roman;
+		.text3 {
+				font: 14pt/15pt Times New Roman;
 				margin: 1% auto 2% auto;
 				padding: 0px 0 5px 0 ;
 				width: 60%;
@@ -56,8 +58,9 @@ body{background-color: snow }
 				border: 0;
 				box-shadow: 1px 1px 3px 0px rgba(15,28,25,0.45);
 			}
-			
-		span { white-space: pre-line;
+
+		span {
+				white-space: pre-line;
 				line-height: 1.4;
 			}
 			
