@@ -1,0 +1,56 @@
+body{
+	font-family: sans-serif;
+}
+
+.test{
+	width: 40%;
+	margin: 0 auto;
+	padding:0 80px;
+}
+
+h2{
+	font-size: 22px;
+	text-align: center;
+	line-height: 2;
+	color: #345;
+}
+
+h3{
+	font-size: 18px;
+	line-height: 2;
+	color: #456;
+}
+
+.test label{
+	display: block;
+	position: relative;
+	padding-left: 25px;
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+.test label:before{
+	display: block;
+	position: absolute;
+	left: 0px;
+	bottom: 3px;
+	width: 12px;
+	height: 12px;
+	content: "";
+	border: 2px solid #012;
+	border-radius: 2px;
+}
+
+.test input[type="checkbox"]{
+	display: none;
+}
+
+input[type="submit"]{
+	width: 50%;
+	display: block;
+	background-color: rgba(0, 100, 255, .2);
+	margin: 50px auto;
+	padding: 10px 0;
+	border: 2px solid #000;
+	font-size: 16px;
+}
