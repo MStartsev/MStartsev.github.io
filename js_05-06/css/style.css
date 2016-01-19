@@ -1,0 +1,159 @@
+body{
+	font-family: helvetica,arial;
+}
+
+.wrapper{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	margin-bottom: 0px;
+	background-size: 100%;
+}
+
+.wrapper header{
+	height: 10%;
+	min-height: 30px;
+}
+
+.header-nav{
+	position: fixed;
+	height: 10%;
+	min-height: 30px;
+	width: 100%;
+	padding-left: 60vw;
+	padding-top: 4vmin;
+	background-color: #ffe;
+	z-index: 2;
+}
+
+.wrapper a{
+	padding: 1vmin;
+	margin-left: 2.5vmin;
+	border-radius: 2vmin;
+	color: #71471E;
+	background-color: rgba(235, 235, 19, 0.345);
+	font-size: 2.7vmin;
+	text-shadow: 1px -1px 15px #f00;
+	outline-color: rgba(213, 233, 62, 1.0);
+}
+
+section{
+	position: fixed;
+	width: 100%;
+	height: 80%;
+	background-color: #fff;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	z-index: 3;
+}
+
+.timer{
+	position: fixed;
+	width: 75vw;
+	height: 80%;
+	left: 12.5%;
+	background-color: rgba(75, 87, 179, .1);
+	min-height: 100px;
+}
+
+footer{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 10%;
+	min-height: 30px;
+	background-color: #eff;
+}
+
+.footer-nav{
+	width: 83vmin;
+	margin: 0 auto;
+	padding: 4vmin 0 4vmin 0vmin;
+	height: 10vh;
+	min-height: 30px;
+	background-color: #eff;
+}
+
+#table{
+	width: 75vmin;
+	display: block;
+	background-color: rgba(0, 100, 255, .2);
+	margin: 10vmin auto 2vmin;
+	padding: 4px 0;
+	border: 2px solid #000;
+	font-size: 10vmin;
+}
+
+.wrap{
+	width: 75vmin;
+	margin: 0 auto;
+}
+
+#start, #split, #reset{
+	width: 25vmin;
+	font-size: 3vmin;
+	background-color: rgba(200, 152, 54, .8);
+	border-radius: 2vmin;
+	outline: none;
+}
+
+.split-box{
+	width: 75vmin;
+	min-height: 54%;
+	max-height: 54%;
+	overflow-y: auto;
+	margin: 0 auto;
+	background-color: rgba(200, 152, 54, .1);
+}
+
+.timer-box{
+	padding-top: 1vh;
+	font-size: 3vmin;
+	text-align: center;
+	text-shadow: 1px -1px 15px #aff;
+
+}
+
+#footer-a_1{
+	margin-left: 4vw;
+}
+
+#footer-a_2{
+	margin-left: -0.2vmin;
+}
+
+.bgWhite{
+	background-color: #fff;
+}
+
+.barBgGrey {
+	background-color: #B1C0CD;
+}
+
+.bgGrey {
+	background-color: #EAEAEA;
+}
+
+.barBgBlue {
+	background-color: #87E4F7;
+}
+
+.bgBlue {
+	background-color: #89DFFF;
+}
+
+.barBgGreen{
+	background-color: #ACF5CE;
+}
+
+.bgGreen{
+	background-color: #C5EE9A;
+}
+
+.barBgBlack{
+	background-color: #636059;
+}
+
+.bgBlack{
+	background-color: #A5A5A5;
+}
