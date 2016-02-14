@@ -1,0 +1,152 @@
+/*  it's CSS file for jQuery plugin randomCubeCarousel*/
+
+.randomCubeCarousel {
+	position: relative;
+	overflow: hidden;
+	width: 75vw;
+	height: 42.187vw;
+	margin: 1vw auto;
+	padding: 0.1vw;	
+	background-color: #eee;
+	border: 1px solid #9bb;
+	box-shadow: inset -2vw -2vw 20vw rgba(100, 200, 220, .8);
+}
+
+
+.randomCubeCarousel img{
+	display: block;
+	visibility: hidden;
+	width: 1vw;	
+}
+
+.rCC__img {
+	position: absolute;
+	display: block;	
+	width: 100%;
+	height: 0%;
+	padding-top: 100%;
+	border: 2px solid #9bb;
+	background-color: rgba(238, 238, 255, .4);
+	background-size: auto 99%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.rCC__overboard{
+	right: 200vw;
+}
+
+.rCC__cube {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -18.5% 0 0 -24.5%;
+	width: 25vw;
+	height: 25vw;
+	-webkit-transition: all 1000ms ease;
+	-moz-transition: all 1000ms ease;
+	-o-transition: all 1000ms ease;
+	-ms-transition: all 1000ms ease;
+	transition: all 1000ms ease;
+
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	-ms-transform-style: 50% 50%;
+	transform-origin: 50% 50%;
+
+	-webkit-transform: perspective(3000px) rotate3d(1,1,0,-45deg);
+	-moz-transform: perspective(3000px) rotate3d(1,1,0,-45deg);
+	-o-transform: perspective(3000px) rotate3d(1,1,0,-45deg);
+	-ms-transform-style: perspective(3000px) rotate3d(1,1,0,-45deg);
+	transform: perspective(3000px) rotate3d(1,1,0,-45deg);
+
+}
+
+.rCC__cube li {
+	-webkit-transition: all 1500ms ease;
+	-moz-transition: all 1500ms ease;
+	-o-transition: all 1500ms ease;
+	-ms-transition: all 1500ms ease;
+	transition: all 1500ms ease;
+}
+
+.face-of-the-cube_1 {
+	top: 0;
+	left: 0;
+}
+
+.face-of-the-cube_2 {
+	top: 0;
+	left: 100%;
+
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	-o-transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.face-of-the-cube_3 {
+	top: 100%;
+	left: 0;
+
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	-o-transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	transform-origin: 0 0;
+ }
+
+.face-of-the-cube_4 {
+	top: 0;
+	right: 100%;
+
+	-webkit-transform-origin: 100% 0;
+	-moz-transform-origin: 100% 0;
+	-o-transform-origin: 100% 0;
+	-ms-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+}
+
+.face-of-the-cube_5 {
+	bottom: 100%;
+	left: 0;
+
+	-webkit-transform-origin: 0 100%;
+	-moz-transform-origin: 0 100%;
+	-o-transform-origin: 0 100%;
+	-ms-transform-origin: 0 100%;
+	transform-origin: 0 100%;
+}
+
+.face-of-the-cube_6 {
+	top: 0;
+	left: 0;
+
+	-webkit-transform-origin: 0 50%;
+	-moz-transform-origin: 0 50%;
+	-o-transform-origin: 0 50%;
+	-ms-transform-origin: 0 50%;
+	transform-origin: 0 50%;
+}
+
+#big-image{
+	position: relative;	
+	width: 0%;
+	height: 100%;
+	padding-left: 100%;
+
+	background-color: rgba(238, 238, 255, .4);
+	background-size: auto 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	z-index: 9;
+}
