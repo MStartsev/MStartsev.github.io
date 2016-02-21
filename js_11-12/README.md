@@ -1,4 +1,4 @@
-# [randomCubeCarousel](https://github.com/MStartsev) : jquery plugin 3D carousel slider
+# [randomCubeCarousel](MStartsev.github.io/js_11-12/index.html) : jquery plugin 3D carousel slider
 
 * A responsive 3D carousel widget for **7+** images.
 * Full 3D effect requires `css transform3d` support browsers.
@@ -22,14 +22,14 @@
 ```html
 <head>
 	<meta charset="UTF-8">
-	<title>randoCubeCarousel</title>
+	<title>randomCubeCarousel</title>
 	
 		<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/randoCubeCarousel.css">
+	<link rel="stylesheet" href="css/randomCubeCarousel.css">
 		<link rel="stylesheet" href="css/style.css">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="js/randoCubeCarousel.js"></script>
+	<script src="js/randomCubeCarousel.js"></script>
 		<script src="js/script.js"></script>
 </head>
 
@@ -55,13 +55,13 @@ randomCubeCarousel expects a very basic HTML markup structure inside your HTML d
 </div>
 
 ```
-* _Only one copy of the code with `div class="randomCubeCarousel"` on a page_.
+ _Only one copy of the code with `div class="randomCubeCarousel"` on a page_.
 
-* **Setup*
+## Setup
 
 ```html
 $('.randomCubeCarousel').randomCubeCarousel();
 
 ```
 
-*   © github.com/MStartsev
+  '© github.com/MStartsev'

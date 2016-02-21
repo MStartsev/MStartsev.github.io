@@ -1,3 +1,69 @@
-body{
-	font-family: helvetica,arial;
+body {
+	font-family: 'Inconsolata', helvetica, arial;
+}
+
+.list-wrapper {
+	width: 480px;
+	margin: 10px auto;
+	padding: 30px;
+	box-sizing: border-box;
+	border-radius: 15px;
+	margin-bottom: 50px;
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(98,140,156,.8);
+	-moz-box-shadow: 0px 0px 8px 0px rgba(98,140,156,.8);
+	box-shadow: 0px 0px 8px 0px rgba(98,140,156,.8);
+}
+
+.list-wrapper h2 {
+	font-family: 'Comfortaa', cursive;
+	font-size: 22px;
+	text-align: center;
+}
+
+.list-wrapper h4 {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.list-wrapper img {
+	display: block;
+	width: 150px;
+	height: 150px;
+	border-radius: 40px;
+	margin: 22px auto;
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(69,154,185,.8);
+	-moz-box-shadow: 0px 0px 8px 0px rgba(69,154,185,.8);
+	box-shadow: 0px 0px 8px 0px rgba(69,154,185,.8);
+}
+
+.list-wrapper span {
+	display: block;
+	margin-bottom: 25px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.list-wrapper ul {
+	padding: 5px 0;
+	margin: 15px 0;
+	border-top: 1px solid rgba(10,144,145,.8);
+	border-bottom: 1px solid rgba(10,144,145,.8);
+}
+
+.list-wrapper li {
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.list-wrapper p {
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.list-wrapper footer {
+	padding-top: 10px;
+	font-family: 'Comfortaa';
+	font-size: 14px;
+	text-align: right;
+	line-height: 20px;
 }

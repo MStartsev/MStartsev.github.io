@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>js_11-12</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link href='https://fonts.googleapis.com/css?family=Comfortaa&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/lodash/4.5.0/lodash.min.js"></script> 
+	<script src="js/template.js"></script>
+</head>
+<body>
+
+	<script type="text/template" id="list-template">
+
+		<section class="list-wrapper">
+
+			<div id="user-list">
+
+				<h2><%= data.userFirstName + " " + data.userLastName %></h2>
+				<img src="<%= data.userIcon %>">
+				<span><%= data.userPosition %></span>
+
+				<ul>
+					<h4><%= data.userDescription %></h4>
+					<li><%= data.userDescriptionParagraph_1 %></li>
+					<li><%= data.userDescriptionParagraph_2 %></li>
+					<li><%= data.userDescriptionParagraph_3 %></li>
+				</ul>
+
+				<h4>My fidbek:</h4>
+				<p><%= data.fidbek %></p>
+
+				<footer>My phone number:<%= data.userTel %></footer>
+
+			</div>
+
+		</section>
+
+	</script>
+
+
+</body>
+</html>
