@@ -1,0 +1,93 @@
+.latest-news {
+	float: left;
+	width: 49.8%;
+	&__article {
+		position: relative;
+		margin-bottom: 29px;
+		height: 150px;
+		&%ba {
+			display: block;
+			position: absolute;
+			left: -15px;
+			width: 40px;
+			height: 40px;
+			text-align: center;
+			line-height: 40px;
+			z-index: 2;
+		}
+		&:before {
+			top: 15px;
+			content:'';
+			font-size: 15px;
+			color: #fff;
+			background-color: $blue;
+			@extend %ba
+		}
+		&:after {
+			top: 55px;
+			content:'';
+			color: #2a2d32;
+    	background-color: $golden;
+    	font-size: 18px;			
+			@extend %ba
+		}
+		&_1 {
+			&:before {
+				content:'Jan';
+			}
+			&:after {
+				content:'23';
+			}
+		}
+		&_2 {
+			&:before {
+				content:'Jan';
+			}
+			&:after {
+				content:'21';
+			}
+		}
+	}
+	&__img {
+		width: 150px;
+		height: 150px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	&__aside {
+		position: relative;
+		padding-left: 183px;
+		height: 150px;
+	}
+	&__title {
+		margin-bottom: 48px;
+		color: $bgDark;
+		font-size: 24px;
+	}
+	&__title-3 {
+		display: block;
+		padding-bottom: 10px;
+		color: $bgDark;
+		font-size: 16px;
+	}
+	&__link {
+		color: $blue;
+		&_title {
+			color: $bgDark;
+			&:hover{
+				color: $blue;
+			}
+		}
+	}
+	&__text {
+		display: block;
+		color: $grey;
+		font-size: 13px;
+		line-height: 20px;
+	}
+	&__comments {
+		margin-bottom: 20px;
+		@extend .latest-news__text
+	}
+}

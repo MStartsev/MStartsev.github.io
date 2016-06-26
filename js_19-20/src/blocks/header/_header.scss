@@ -1,0 +1,102 @@
+.header{
+	margin: 30px 0;
+}
+
+.logo{
+	position: relative;
+	float: left;
+	&__header{
+		margin-left: 45px;
+		font-size: 30px;
+		letter-spacing: 1.5px;
+	}
+	&__text{
+		margin-left: 47px;
+		color: $grey;
+		font-size: 12px;
+		font-weight: 200;
+		text-transform: uppercase;
+		letter-spacing: 3.5px;
+	}
+	&:before{
+		position: absolute;
+		display: block;
+		margin-top: 2.5px;
+		content: '';
+		width: 45px;
+		height: 45px;
+		background: transparent url(../img/spritesheet.png) -325px -34px no-repeat;
+	}	
+}
+
+.menu-socials{
+	float: right;
+	height: 37px;	
+	&__item{
+		width: 33px;
+		color: $ligthgrey;
+		transition: 0.3s;
+		&:before{
+			width: 1em;
+			margin-right: .2em;
+			text-align: center;
+			line-height: 1em;
+			margin-left: .2em;
+			cursor: pointer;
+		}
+		&:hover{
+				color: $blue;
+		}
+		&_facebook:before{ 
+			@include content(facebook);			
+		}
+		&_twitter:before{ 
+			@include content(twitter);
+		}
+		&_rss:before{ 
+			@include content(rss);
+		}
+		&_linkedin:before{ 
+			@include content(linkedin);
+		}
+		&_skype:before{ 
+			@include content(skype);
+		}
+	}	
+}
+
+.menu-main{
+	display: inline-block;
+	width: 1160px;
+	margin: 40px auto 10px;
+	background-color: $bgDark;	
+
+	&__item{
+		height: 55px;
+		border-right: 1px solid #000;
+		padding: 0 40px;
+		&_active-page {
+			background-color: $blue;
+			& .menu-main__link:hover{
+				color: #fff;
+				cursor: default;
+			}
+		}		
+	}
+	&__link{
+		display: block;
+		font-size: 14px;
+		font-family: "Ubuntu", sans-serif;
+		line-height: 55px;
+		vertical-align: middle;
+		color: #fff;
+		text-transform: uppercase;
+		transition: 0.3s;
+		&:hover {
+				color: $golden;
+		}
+	}
+	&__search-form {
+		float: right
+	}	
+}

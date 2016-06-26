@@ -1,0 +1,43 @@
+@mixin content($name) {
+	font-family: fontello;
+	@if($name == "facebook") {
+		content: "\e801";
+	}
+	@if($name == "twitter") {
+		content: "\e802";
+	}
+	@if($name == "rss") {
+		content: "\e803";
+	}
+	@if($name == "linkedin") {
+		content: "\e800";
+	}
+	@if($name == "skype") {
+		content: "\e804";
+	}
+	@if($name == "search") {
+		content: "\e805";
+	}
+	@if($name == "mobile") {
+		content: "\e806";
+	}
+	@if($name == "location") {
+		content: "\e807";
+	}
+	@if($name == "vcard") {
+		content: "\e808";
+	}
+	@if($name == "copyright") {
+		content: "\e809";
+	}	
+	@if($name == "right-small") {
+		content: "\e80a";
+	}
+}
+
+@mixin clearfix{
+	display: block;
+	content: '';
+	clear: both;
+	// visibility: hidden;
+}

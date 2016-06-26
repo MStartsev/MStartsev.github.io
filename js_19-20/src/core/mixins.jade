@@ -1,0 +1,32 @@
+include ../lib/bemto/bemto
+
+mixin LINKS(... hreflinks)
+	//- +e.LINK invalid!
+	each hreflink in hreflinks
+		link(rel="stylesheet" type="text/css" href=hreflink)
+
+mixin A(link, cl)
+	if (cl)
+		+b.A(href = link)(class = cl)
+			block
+	else
+		+b.A(href = link).link
+			block
+
+mixin a(link, modifier)
+	if (modifier)
+		+e.A(href = link)(class = 'link_' + modifier)
+			block
+	else
+		+e.A(href = link).link
+			block
+
+mixin wrapper
+	+e.wrapper.wrapper
+		block
+
+mixin SliderIMG(src)
+	+e
+		+e.IMG(src = src)
+			block
+

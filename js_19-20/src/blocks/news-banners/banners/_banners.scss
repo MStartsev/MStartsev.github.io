@@ -1,0 +1,77 @@
+.banners {
+	float: left;
+	width: 48%;
+	padding-left: 15px;
+	transition: 1s;
+		&__control {
+		display: block;
+		position: relative;
+		width: 580px;
+		height: 39px;
+		float: left;
+		color: $bgDark;
+		text-transform: uppercase;
+		line-height: 40px;
+		font-size: 13px;
+		font-weight: bolder;
+		border: 1px solid $borderCol;
+		transition: 1s;
+		&_link {
+			cursor: pointer;
+		}
+		&:before {
+		display: block;
+		content: '\2795';
+		float: left;
+		position: relative;
+		width: 39px;
+		height: 39px;
+		margin-right: 12px;
+		border-right: 2px solid $borderCol;
+		text-align: center;
+		font-size: 14px;
+		font-weight: 200;
+		}
+		& ~ .banners__text {
+			visibility: hidden;
+			font-size: 0;
+			margin: 16px;
+			height: 0px;
+			transition: 1s;
+		}
+	}
+	&__checkbox {
+		display: none;
+		&:checked {
+			float: left;
+			border-right: 2px solid $borderCol;
+			transition: 0.5s;
+			
+			& ~ .banners__control {
+				color: #fff;
+				background-color: $golden;
+				&:before {
+				content: '\2796';
+				transition: 0.5s;
+				}
+			}
+			& ~ .banners__text {
+				visibility: visible;
+				display: block;
+				width: 540px;
+				height: 130px;
+				padding:50px 0 0 40px;
+				color: $bannersText;
+				line-height: 20px;
+				font-size: 13px;
+				font-family: Arial,sans-serif;
+				transition: 1s;
+			}
+		}
+	}
+	&__title {
+		margin-bottom: 48px;
+		color: $bgDark;
+		font-size: 24px;
+	}	
+}

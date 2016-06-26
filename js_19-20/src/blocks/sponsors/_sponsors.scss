@@ -1,0 +1,36 @@
+.sponsors {
+	&__list {
+		line-height: 62px;
+		padding: 85px 0;
+	}
+	&__item {
+		display: inline-block;
+		height: 62px;
+		width: 153px;
+		opacity: 0.75;
+		margin: 0 20px;
+		background: transparent url(../img/spritesheet.png) no-repeat;
+		transition: 0.5s;
+		&:nth-child(1) {
+			background-position: 0 -1px;
+		}
+		&:nth-child(2) {
+			background-position: 1px -67px;
+		}
+		&:nth-child(3) {
+			background-position: -16px -130px;
+		}
+		&:nth-child(4) {
+			background-position: -135px -1px;
+		}
+		&:nth-child(5) {
+			background-position: -135px -65px;
+		}
+		&:nth-child(6) {
+			background-position: -180px -128px;
+		}
+		&:hover {
+			opacity: 1;
+		}
+	}
+}

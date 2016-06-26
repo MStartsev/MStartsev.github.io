@@ -1,0 +1,17 @@
+include mixins
+
++b.HTML
+	+b.HEAD
+		+e.META(charset="UTF-8")
+		block title
+		+e.LINK(rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500')
+		+e.LINK(rel="stylesheet" type="text/css" href="css/style.min.css")
+		+e.SCRIPT(src="js/script.min.js")
+	+b.BODY
+		block header
+		block slider
+		block intro
+		block servises
+		block news-banners
+		block sponsors
+		block footer

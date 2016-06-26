@@ -1,0 +1,105 @@
+
+$nav_width: 30px;
+$nav_height: $nav_width;
+
+.carousel-wrapper{
+	position: relative;
+	.jcarousel {
+		position: relative;
+		overflow: hidden;
+		width: 1160px;
+		height: 400px;
+		margin: 10px auto;
+		ul{
+			width: 20000em;
+			position: relative;
+			li{
+				float: left;
+				img{
+					vertical-align: top;
+				}
+			}
+		}
+	}
+
+	/*  PREV NEXT BUTTONS  */
+	.jcarousel-prev,
+	.jcarousel-next{
+		position: absolute;
+		top: 200px;
+		display: block;
+		width: $nav_width;
+		height: $nav_height;
+		background-color: #778899;
+		&:hover{
+			background-color: darken(#778899,10%);
+		}
+		&.inactive{
+			cursor: default;
+		}
+	}
+	.jcarousel-prev{
+		left: -50px;
+	}
+	.jcarousel-next{
+		right: -50px;
+	}
+
+	/*  PAGINATION  */
+	.jcarousel-pagination{
+		position: absolute;
+		bottom: 5%;
+		left: 47%;
+		a{
+			display: inline-block;
+			margin-right: 15px;
+			width: 15px;
+			height: 15px;
+			background: #fff;
+			cursor: pointer;
+			border: 3px solid #fff;
+			text-indent: -9999px;
+			box-sizing: border-box;
+			transition: 0.3s;
+			&:first-child{
+				margin-left: 0;
+			}
+			&:hover{
+				background-color: #424242;
+				border: 3px solid #424242;
+
+			}
+			&.active{				
+				background: rgba(0, 0, 0, 0.9);
+				cursor: default;
+				&:hover{
+					border: 3px solid #fff;
+				}
+			}
+		}
+	}
+
+	.inscription{
+		position: absolute;
+		top: 150px;
+		left: 50px;
+		color: #fff;
+		font-size: 48px;
+		&__block{
+			display: block;
+			width: 160px;
+			padding: 10px 25px 0 25px;
+			
+			text-transform: uppercase;
+			background-color: rgba(0,0,0,.5);
+		}
+		&__block:first-child{
+			color: #f4b60d;
+			padding-top: 20px;
+		}
+		&__block:last-child{
+			width: 235px;
+			padding-bottom: 20px;
+		}
+	}
+}

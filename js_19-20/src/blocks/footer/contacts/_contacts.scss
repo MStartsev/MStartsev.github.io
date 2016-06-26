@@ -1,0 +1,40 @@
+.contacts {
+	height: 60px;
+	background-color: #35383c;
+	&__item {
+		float: left;
+		margin-right: 35px;
+		margin-left: 33px;
+		color: #fff;
+		opacity: 0.3;
+		line-height: 60px;
+		vertical-align: middle;
+		font-size: 12px;
+		font-family: Arial,sans-serif;
+		&:before{
+			display: inline-block;
+			width: 21px;
+			margin-right: 3px;
+			font-size: 18px;
+			text-align: center;
+			line-height: 18px;
+			margin-left: 3px;
+		}
+		&_location:before {
+			@include content(location);
+		}
+		&_mobile:before {
+			@include content(mobile);
+		}
+		&_vcard:before {
+			@include content(vcard);
+		}
+		&_copyright {
+			float: right;
+			&:before {
+				font-size: 14px;
+				@include content(copyright);
+			}
+		}
+	}
+}

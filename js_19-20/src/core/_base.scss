@@ -1,0 +1,19 @@
+body{
+	font-family: "Ubuntu", Arial, sans-serif;
+}
+
+a{
+	font: inherit;
+	color: #333;
+}
+
+.wrapper{
+	width: 1160px;
+	margin: 0 auto;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}

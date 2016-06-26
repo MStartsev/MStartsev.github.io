@@ -1,0 +1,38 @@
+.footer-menu {
+	background-color: $bgDark;
+	&__list{
+		display: block;
+		float: left;
+		width: 230px;
+		margin: 0 0 83px 40px;
+	}
+	&__title-3{
+		display: block;
+		width: 230px;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 16px;
+		font-weight: 500;
+		margin: 64px 0 35px;
+	}
+	&__item {
+		line-height: 36px;
+		border-bottom: 1px solid $borderBottom;
+		&:last-child {
+			border-bottom: none;
+		}    
+	}
+	&__link{
+		display: block;
+		width: 230px;
+		color: #fff;
+		opacity: 0.3;
+		font-size: 13px;
+		font-family: Arial,sans-serif;
+		transition: 0.3s;
+		&:hover {
+			color: $blue;
+			opacity: 1;
+		}
+	}
+}
