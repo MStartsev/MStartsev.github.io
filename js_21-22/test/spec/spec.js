@@ -25,7 +25,7 @@ describe("app", function() {
 		result = app(1, 1000000);
 
 		//assert
-		console.log ('base 1, exp 0');
+		console.log ('base 1, exp 1000000');
 		expect(result).toBe(1);
 	});
 });
@@ -40,7 +40,7 @@ describe("app", function() {
 		result = app(-1, 0);
 
 		//assert
-		console.log ('base 1, exp 0');
+		console.log ('base -1, exp 1');
 		expect(result).toBe(1);
 	});
 });
